@@ -2,6 +2,8 @@ import React, { useState, useMemo } from 'react'
 import Temp from '../info/mid'
 import Context from '../context'
 import Timer from './timer'
+import Forms from '../formily/triggerForm';
+import Form2 from '../formily'
 
 export default function () {
   const [ str, setStr ] = useState('')
@@ -19,6 +21,8 @@ export default function () {
         <Temp/>
       </Context.Provider>
       <Timer config={config} />
+      <Forms />
+      <Form2 />
     </div>
   )
 }
